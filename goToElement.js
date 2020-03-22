@@ -14,3 +14,11 @@ $("*").each(function () {
         }
     });
 });
+
+// 當捲動滾輪時停止動畫
+// jqon 事件：mousewheel 滑鼠滾動
+$(window).on("mousewheel", function () {
+    $("*").each(function () {
+        $(this).stop();
+    });
+});
